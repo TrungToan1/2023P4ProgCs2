@@ -15,6 +15,7 @@ namespace ConsoleMonGame
         internal int energy;
         internal string name;
         private List<Skill> skills;
+        internal Element weakness;  
 
 
 
