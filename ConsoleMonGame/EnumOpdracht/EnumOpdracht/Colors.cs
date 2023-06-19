@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnumOpdracht
 {
-    internal class Colors
+    internal Enum Colors
     {
 
 
