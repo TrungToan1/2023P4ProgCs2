@@ -4,12 +4,20 @@ namespace ConsoleMonGame
 {
     internal class Program
     {
+
+        static void TestFactoryFunctions()
+        {
+            Console.WriteLine("TestFactoryFunctions");
+            ConsoleMonFactory factory = new ConsoleMonFactory();
+            factory.Load("monsterdata.txt");
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
 
             TestConsoleMonFunctions();
             TestSkillFunctions();
+            TestFactoryFunctions();
         }
 
         static void TestConsoleMonFunctions()
