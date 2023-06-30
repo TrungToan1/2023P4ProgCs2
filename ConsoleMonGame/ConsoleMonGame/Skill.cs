@@ -8,10 +8,23 @@ namespace ConsoleMonGame
 {
     internal class Skill
     {
-        public int damage;
-        public int energyCost;
-        public string name;
-        public Element element;
+        public Skill()
+        {
+
+        }
+
+        internal Skill(int damage, int energyCost, string name, Element element)
+        {
+            this.damage = damage;
+            this.energyCost = energyCost;
+            this.name = name;
+            this.element = element;
+        }
+
+        public int damage { get; set; }
+        public int energyCost { get; set; }
+        public string name { get; set; }
+        public Element element { get; set; }
 
 
         internal void UseOn(ConsoleMon target, ConsoleMon caster)
