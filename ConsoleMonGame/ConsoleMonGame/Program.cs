@@ -5,11 +5,14 @@ namespace ConsoleMonGame
     internal class Program
     {
 
+
+
         static void TestFactoryFunctions()
         {
             Console.WriteLine("TestFactoryFunctions");
             ConsoleMonFactory factory = new ConsoleMonFactory();
             factory.Load("monsterdata.txt");
+            factory.LoadJson("monsterdata.json");
         }
         static void Main(string[] args)
         {
@@ -50,6 +53,8 @@ namespace ConsoleMonGame
 
             Console.WriteLine(casterMon.energy == -20);
         }
+
+
 
     }
 }
